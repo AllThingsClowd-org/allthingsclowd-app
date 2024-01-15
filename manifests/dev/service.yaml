@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: assadldn-app
-  name: assadldn-app-svc
-  namespace: assadldn
+    name: allthingsclowd-app
+  name: allthingsclowd-app-svc
+  namespace: allthingsclowd
 spec:
   type: LoadBalancer
   selector:
-    app: assadldn-app
+    app: allthingsclowd-app
   ports:
   - name: http
     protocol: TCP

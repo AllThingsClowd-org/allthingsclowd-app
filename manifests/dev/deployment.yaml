@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: assadldn-app
-  namespace: assadldn
+  name: allthingsclowd-app
+  namespace: allthingsclowd
   labels:
-    app: assadldn-app
-    env: assadldn
+    app: allthingsclowd-app
+    env: allthingsclowd
 spec:
   selector:
     matchLabels:
-      app: assadldn-app
+      app: allthingsclowd-app
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -19,10 +19,10 @@ spec:
   template:
     metadata:
       labels:
-        app: assadldn-app
+        app: allthingsclowd-app
     spec:
       containers:
-      - name: assadldn-app
+      - name: allthingsclowd-app
         image: {{ IMAGE_CONTAINER }}
         #image: docker.io/aquasaemea/saemea-app:latest
         imagePullPolicy: Always
