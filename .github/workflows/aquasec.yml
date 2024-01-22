@@ -27,6 +27,7 @@ jobs:
         with:
           aqua-key: ${{ secrets.AQUA_KEY }}
           aqua-secret: ${{ secrets.AQUA_SECRET }}
+          verbose: true
           
       - name: Aqua code scanning(SCA,IaC, Secrets/Sensitive Data, Pipeline file and SAST)
         uses: docker://aquasec/aqua-scanner
@@ -55,6 +56,7 @@ jobs:
         with:
           aqua-key: ${{ secrets.AQUA_KEY }}
           aqua-secret: ${{ secrets.AQUA_SECRET }}
+          verbose: true
   
       - name: Build application
         run: echo Application has been succesfully built   
@@ -121,6 +123,7 @@ jobs:
         with:
           aqua-key: ${{ secrets.AQUA_KEY }}
           aqua-secret: ${{ secrets.AQUA_SECRET }}
+          verbose: true
          
       - name: Setting K8s context
         uses: azure/k8s-set-context@v3
