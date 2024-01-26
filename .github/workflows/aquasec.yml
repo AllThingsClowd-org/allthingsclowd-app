@@ -129,7 +129,7 @@ jobs:
         uses: azure/k8s-set-context@v3
         with:
            method: kubeconfig
-           kubeconfig: ${{ secrets.KUBECONFIG_ANDRES }}
+           kubeconfig: ${{ secrets.KUBE_CONFIG_GRAZ }}
            context: emea-aguisado-test
            
       #- name: Deploying to Dev
