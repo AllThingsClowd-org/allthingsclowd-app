@@ -130,7 +130,7 @@ jobs:
         with:
            method: kubeconfig
            kubeconfig: ${{ secrets.KUBE_CONFIG_GRAZ }}
-           context: emea-aguisado-test
+           context: graz-dev-context
            
       #- name: Deploying to Dev
       #  uses: azure/k8s-deploy@v4 
