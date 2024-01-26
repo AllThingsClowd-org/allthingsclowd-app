@@ -30,7 +30,7 @@ spec:
         - name: http
           containerPort: 3000
       imagePullSecrets:
-      - name: github-aquasaemea-dockerhub
+      - name: graz-registry
 #  docker.io/aquasaemea/saemea-app:11
 #        livenessProbe:
 #          httpGet:
