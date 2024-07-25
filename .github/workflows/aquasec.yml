@@ -8,6 +8,7 @@ on:
       - main
       ## comment
       #testing
+  workflow_dispatch:
       
 env:
    DOCKER_REPOSITORY: allthingscloud # name of Docker Hub ID
